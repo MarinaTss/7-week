@@ -28,7 +28,8 @@ ul {
   text-transform: capitalize;
 }
 .sign {
-  text-align: center;
+  text-align: left;
+  margin-left: 20px;
 }
 .picture img {
   margin-right: 25px;
