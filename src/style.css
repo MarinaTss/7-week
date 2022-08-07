@@ -46,3 +46,12 @@ ul {
   position: relative;
   bottom: +57px;
 }
+.btn {
+  background-color: #9aa0a6;
+  border-radius: 5px;
+  border-color: #9aa0a6;
+}
+
+.frameAndSign {
+  max-width: 800px;
+}
