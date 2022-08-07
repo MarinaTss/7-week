@@ -12,15 +12,17 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
+      <div class="frameAndSign">
       <div class="frame">
-        <h1>Dnipro</h1>
+        <h1 id="city">Dnipro</h1>
         <ul>
-          <li>Thursday 20:20</li>
-          <li>Mostly Cloudy</li>
+          <li> Last updated: <span id="date">Thursday 20:20</span></li>
+          <li id="description">Mostly Cloudy</li>
         </ul>
         <div class="row">
           <div class="col-6">
@@ -31,20 +33,20 @@
               alt="Mostly Cloudy"
             />
           </span>
-          <span class="degrees">  23</span><span class="units">°C | °F</span>
+          <span class="degrees" id="temperature">  23</span><span class="units">°C | °F</span>
           </div>
         
           <div class="col-6">
             
             <ul>
-              <li>Precipitation: 7%</li>
-              <li>Humidity: 81%</li>
-              <li>Wind: 5 km/h</li>
+              <br />
+              <li>Humidity: <span id="humidity"> 81</span>%</li>
+              <li>Wind: <span id="wind"> 5</span> km/h</li>
             </ul>
        
           </div>
         </div>
-      </div>
+   </div>
       <small>
         <div class="sign">
         <a href="https://github.com/MarinaTss/7-week" target="_blank">
@@ -54,7 +56,7 @@
       </small>
       </div>
     </div>
-
+   </div>
     <script src="src/index.js"></script>
   </body>
 </html>
