@@ -17,6 +17,12 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  forecastElement.innerHTML = "Forecast";
+}
+
 function showTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -78,4 +84,5 @@ ctemperatureLink.addEventListener("click", showCelTemperature);
 
 search("New York");
 
+displayForecast();
 //ctemperature;
